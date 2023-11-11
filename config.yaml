@@ -1,0 +1,10 @@
+name: simple-python-script
+desc: Program description
+cmd: python main.py --data ${DATA} --result ${OUTPUT}
+env:
+  python: auto # передать в DataSphere код и зависимости pip
+inputs:
+  - numbers.txt: DATA
+outputs:
+  - result.txt: OUTPUT
+cloud-instance-type: c1.4
